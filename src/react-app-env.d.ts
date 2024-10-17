@@ -100,6 +100,7 @@ type ComponentType = ClicksterType |
   | 'Tag'
   | 'Text'
   | 'Textarea'
+  | 'SelectCustom'
 
 type MetaComponentType =
   | 'FormControlMeta'

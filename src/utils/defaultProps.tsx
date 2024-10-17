@@ -334,7 +334,7 @@ export const DEFAULT_PROPS: PreviewDefaultProps = {
 
 export const getDefaultFormProps = (type: ComponentType) => {
   //@ts-ignore
-  const chakraDefaultProps = Chakra[type].defaultProps
+  const chakraDefaultProps = Chakra[type]?.defaultProps
   // @ts-ignore
   return { ...chakraDefaultProps, ...DEFAULT_PROPS[type]?.form }
 }

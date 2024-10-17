@@ -13,28 +13,26 @@ type MenuItems = Partial<
 export const menuItems: MenuItems = {
   Clickster: {
     children: {
-      Hero: {           
-        children: {
-          Pricing1: {}
-        }
-      },
+      Hero: {},
       Feature: {},
       CTA: {},
       Bento: {},
       Pricing: {},
       Header: {},
       Newsletter: {},
-      Stat : {},
-      Testimonials : {},
+      Stat: {},
+      Testimonials: {},
       Blog: {},
-      Contact : {},
+      Contact: {},
       Team: {},
       Content: {},
-      "Logo-Clouds": {},
+      'Logo-Clouds': {},
       FAQs: {},
-      Footer: {}      
-    },    
+      Footer: {},
+      Pricing1: {}
+    },
   },
+  SelectCustom: {},
   Accordion: {
     children: {
       Accordion: {},
