@@ -14,6 +14,7 @@
     "@reach/combobox": "^0.7.3",
     "@rehooks/local-storage": "^2.1.1",
     "@rematch/core": "^1.3.0",
+    "autoprefixer": "^10.4.20",
     "browser-nativefs": "^0.7.1",
     "codesandbox": "^2.1.11",
     "coloreact": "^0.3.1",
@@ -25,6 +26,7 @@
     "lz-string": "^1.4.4",
     "next": "^14.2.15",
     "next-redux-wrapper": "^6.0.2",
+    "postcss": "^8.4.47",
     "prism-react-renderer": "^1.0.2",
     "react": "^18.2.0",
     "react-color": "^2.18.0",
@@ -39,6 +41,7 @@
     "redux": "^4.0.5",
     "redux-persist": "^6.0.0",
     "redux-undo": "^1.0.0",
+    "tailwindcss": "^3.4.14",
     "webpack-bundle-analyzer": "^3.6.0"
   },
   "scripts": {

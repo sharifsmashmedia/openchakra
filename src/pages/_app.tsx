@@ -8,6 +8,7 @@ import { wrapper } from '~core/store'
 import { ErrorBoundary as BugsnagErrorBoundary } from '~utils/bugsnag'
 import AppErrorBoundary from '~components/errorBoundaries/AppErrorBoundary'
 import { AppProps } from 'next/app'
+import '~/globals.css'
 
 const Main = ({ Component, pageProps }: AppProps) => (
   <BugsnagErrorBoundary>
