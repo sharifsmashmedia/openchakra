@@ -11,6 +11,7 @@ type MenuItems = Partial<
 >
 
 export const menuItems: MenuItems = {
+  SelectCustom: {},
   Accordion: {
     children: {
       Accordion: {},

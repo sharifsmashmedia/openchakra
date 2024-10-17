@@ -26,6 +26,7 @@ import NumberInputPreview from '~components/editor/previews/NumberInputPreview'
 import BreadcrumbPreview from './previews/BreadcrumbPreview'
 import BreadcrumbItemPreview from './previews/BreadcrumbItemPreview'
 import HighlightPreview from './previews/HighlightPreview'
+import SelectCustomPreview from './previews/SelectCustomPreview'
 import StatGroupPreview, {
   StatHelpTextPreview,
   StatPreview,
@@ -46,6 +47,8 @@ const ComponentPreview: React.FC<{
   const type = (component && component.type) || null
 
   switch (type) {
+    case 'SelectCustom':
+      return <SelectCustomPreview component={component} />
     // Simple components
     case 'Badge':
     case 'Image':
