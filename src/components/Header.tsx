@@ -138,7 +138,7 @@ const Header = () => {
           aria-label="Chakra UI, Back to homepage"
         >
           <Box fontSize="2xl" as={AiFillThunderbolt} mr={1} color="teal.100" />{' '}
-          <Box fontWeight="bold">open</Box>chakra
+          <Box fontWeight="bold">Clickster</Box>Lander Pro
         </Flex>
 
         <Flex flexGrow={1} justifyContent="space-between" alignItems="center">

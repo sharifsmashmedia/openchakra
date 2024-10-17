@@ -34,6 +34,7 @@ import SkeletonPreview, {
   SkeletonCirclePreview,
   SkeletonTextPreview,
 } from './previews/SkeletonPreview'
+import Pricing1Preview from './previews/Pricing1Preview'
 
 const ComponentPreview: React.FC<{
   componentName: string
@@ -175,6 +176,8 @@ const ComponentPreview: React.FC<{
       return <SkeletonTextPreview component={component} />
     case 'SkeletonCircle':
       return <SkeletonCirclePreview component={component} />
+    case 'Pricing1':
+      return <Pricing1Preview component={component} />
 
     default:
       return null

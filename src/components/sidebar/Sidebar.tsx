@@ -67,18 +67,44 @@ const Menu = () => {
               const { children, soon } = menuItems[name] as MenuItem
 
               if (children) {
-                const elements = Object.keys(children).map(childName => (
-                  <DragItem
-                    isChild
-                    key={childName}
-                    label={childName}
-                    type={childName as any}
-                    id={childName as any}
-                    rootParentType={menuItems[name]?.rootParentType || name}
-                  >
-                    {childName}
-                  </DragItem>
-                ))
+                const elements = Object.keys(children).map(childName => {
+                  const child = children[childName as keyof typeof children] as MenuItem;
+                  return (
+                    <DragItem
+                      isChild
+                      key={childName}
+                      label={childName}
+                      type={childName as any}
+                      id={childName as any}
+                      rootParentType={menuItems[name]?.rootParentType || name}
+                    >
+                      {childName}
+                      {child.children && (
+                        <DragItem
+                          isChild
+                          key={`${childName}Children`}
+                          label={`${childName} Children`}
+                          type={`${childName}Children` as any}
+                          id={`${childName}Children` as any}
+                          rootParentType={menuItems[name]?.rootParentType || name}
+                        >
+                          {Object.keys(child.children).map(grandChildName => (
+                            <DragItem
+                              isChild
+                              key={grandChildName}
+                              label={grandChildName}
+                              type={grandChildName as any}
+                              id={grandChildName as any}
+                              rootParentType={menuItems[name]?.rootParentType || undefined}
+                            >
+                              {grandChildName}
+                            </DragItem>
+                          ))}
+                        </DragItem>
+                      )}
+                    </DragItem>
+                  );
+                });
 
                 return [
                   <DragItem
@@ -93,7 +119,7 @@ const Menu = () => {
                     {name}
                   </DragItem>,
                   ...elements,
-                ]
+                ];
               }
 
               return (

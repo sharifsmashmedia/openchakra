@@ -11,6 +11,30 @@ type MenuItems = Partial<
 >
 
 export const menuItems: MenuItems = {
+  Clickster: {
+    children: {
+      Hero: {           
+        children: {
+          Pricing1: {}
+        }
+      },
+      Feature: {},
+      CTA: {},
+      Bento: {},
+      Pricing: {},
+      Header: {},
+      Newsletter: {},
+      Stat : {},
+      Testimonials : {},
+      Blog: {},
+      Contact : {},
+      Team: {},
+      Content: {},
+      "Logo-Clouds": {},
+      FAQs: {},
+      Footer: {}      
+    },    
+  },
   Accordion: {
     children: {
       Accordion: {},
@@ -127,6 +151,7 @@ export const menuItems: MenuItems = {
 }
 
 export const componentsList: ComponentType[] = [
+  'Clickster',
   'Accordion',
   'AccordionIcon',
   'AccordionItem',
